@@ -19,7 +19,7 @@ class HBNBCommand(cmd.Cmd):
     storage_dict = storage.all()
 
     def do_create(self, line):
-        """ Creates a new instance of BaseModel, 
+        """ Creates a new instance of BaseModel,
             saves it (to the JSON file) and prints the id.
             Usage: create <class name>
         """
@@ -94,7 +94,8 @@ class HBNBCommand(cmd.Cmd):
                 print(dict_list)
 
     def do_update(self, line):
-        """Updates an instance based on the class name and id or updating attribute
+        """Updates an instance based on the class name and id or updating
+            attribute
         Usage: update <class name> <id> <attribute name> "<attribute value>"
         """
         args = line.split()
@@ -131,7 +132,9 @@ class HBNBCommand(cmd.Cmd):
         elif type(eval(args[2])) == dict:
             obj = self.storage_dict["{}.{}".format(args[0], args[1])]
             for key, value in eval(args[2]).items():
-                if (key in obj.__class__.__dict__.keys() and type(obj.__class__.__dict__[key]) in {str, int, float}):
+                if (key in obj.__class__.__dict__.keys() and
+                        type(obj.__class__.__dict__[key])
+                        in {str, int, float}):
                     typ_val = type(obj.__class__.__dict__[key])
                     obj.__dict__[key] = typ_val(value)
                 else:

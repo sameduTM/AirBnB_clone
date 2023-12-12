@@ -9,6 +9,7 @@ from uuid import uuid4
 class BaseModel:
     """This class defines all common attributes/methods for other classes
     """
+
     def __init__(self, *args, **kwargs):
         """Instanstiation method for the class with attributes:
             id, created_at and updated_at
@@ -45,9 +46,9 @@ class BaseModel:
         my_dict["__class__"] = self.__class__.__name__
         my_dict["created_at"] = datetime.now().isoformat()
         my_dict["updated_at"] = datetime.now().isoformat()
-        
+
         return my_dict
-    
+
     def __str__(self):
         """string method
 

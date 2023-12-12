@@ -2,6 +2,12 @@
 import json
 import os
 from models.base_model import BaseModel
+from models.user import User
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.state import State
 """This is the file_storage module with class,
     FileStorage
 """
@@ -39,7 +45,7 @@ class FileStorage:
         """
         if os.path.exists(self.__file_path):
             with open(self.__file_path, 'r') as f:
-                    for ob in json.load(f).values():
-                        self.new(eval(ob["__class__"])(**ob))
+                for ob in json.load(f).values():
+                    self.new(eval(ob["__class__"])(**ob))
         else:
             return
