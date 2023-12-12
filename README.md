@@ -73,10 +73,10 @@ Usage:
 > quit
 > EOF
 
-Contributing
+### Contributing
 If you'd like to contribute to the project, please follow the guidelines in the CONTRIBUTING.md file.
 
-License
+### License
 This project is licensed under the MIT License.
 
 
