@@ -13,7 +13,13 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = '(hbnb) '
     __classes = {
-        "BaseModel"
+        "BaseModel",
+        "User",
+        "State",
+        "City",
+        "Amenity",
+        "Place",
+        "Review"
     }
 
     storage_dict = storage.all()
