@@ -3,7 +3,7 @@ import cmd
 from models.base_model import BaseModel
 from models import storage
 """This is the cmd module that contains,
-        the entry point for the command interpreter
+        the entry point for the command interpreter.
 """
 
 
