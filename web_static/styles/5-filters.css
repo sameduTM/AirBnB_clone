@@ -7,10 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
 }
 
-section.filters button{
+section.filters button {
     font-size: 18px;
     background: #FF5A5F;
     color: #FFFFFF;
@@ -27,7 +27,8 @@ section.filters button{
     opacity: 90%;
 }
 
-.locations, .amenities {
+.locations,
+.amenities {
     height: 100%;
     width: 25%;
     padding-left: 50px;
@@ -37,13 +38,56 @@ section.filters button{
     border-right: 1px solid #DDDDDD;
 }
 
-.locations h3, .amenities h3 {
+.locations h3,
+.amenities h3 {
     font-weight: 600;
     margin: 12px 0 5px 0;
 }
-.locations h4, .amenities h4 {
+
+.locations h4,
+.amenities h4 {
     font-weight: 400;
     font-size: 14px;
     margin: 0 0 0 0;
 }
+/*
+.locations, .amenities li {
+    list-style: none;
+}
 
+.popover, .amenities li {
+    padding-left: 30px;
+}
+
+.popover {
+    display: none;
+}
+
+.locations:hover .popover {
+    display: block;
+}
+
+.amenities:hover .popover
+{
+    display: block;
+}
+
+.locations .popover {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    margin-left: -20%;
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+.amenities .popover {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    margin-left: -50px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+*/

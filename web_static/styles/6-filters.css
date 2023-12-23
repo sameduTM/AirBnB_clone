@@ -51,33 +51,52 @@ section.filters button {
     margin: 0 0 0 0;
 }
 
+.locations, .amenities li {
+    list-style: none;
+}
+
+.popover, .amenities li {
+    padding-left: 30px;
+}
+
 .popover {
     display: none;
-    position: relative;
-    left: -51px;
+}
+
+.locations:hover .popover {
+    display: block;
+}
+
+.amenities:hover .popover
+{
+    display: block;
+}
+.locations .popover {
     background-color: #FAFAFA;
-    width: 80%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    z-index: 1;
-    padding: 10px 50px 30px;
-
+    list-style: none;
+    margin-left: -20%;
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+.amenities .popover {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    margin-left: -50px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
-.popover,
-.popover ul {
-    list-style-type: none;
+.locations .popover li {
+    padding-left: 10px;
 }
 
-.locations:hover>.popover {
-    display: block;
-}
-
-.amenities:hover>.popover {
-    display: block;
-}
-
-.popover h2 {
-    margin-top: 0;
-    margin-bottom: 5px;
+.popover li h2, h2 {
+    margin-bottom: auto;
+    margin-left: -10px;
 }
